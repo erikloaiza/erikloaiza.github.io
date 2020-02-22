@@ -8,3 +8,7 @@ $color_white: #f3f3f3;
 $color_primary:$color_black;
 
 $font_display: 'Righteous';
+
+//neomorph
+$shadow_dark: adjust-color($color: $color_white, $lightness: -25%, $alpha: 0.6);
+$shadow_ligh: adjust-color($color: $color_white, $lightness: 25%, $alpha: 0.6);

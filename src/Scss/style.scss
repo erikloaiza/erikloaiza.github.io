@@ -1,3 +1,6 @@
 @import 'abstracts/variables';
-@import 'components/_menu';
+@import 'abstracts/base';
+@import 'components/menu';
+@import 'components/skill';
+@import 'components/job';
 @import 'vendor/boostrap';
