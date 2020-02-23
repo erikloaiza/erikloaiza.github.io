@@ -11,14 +11,14 @@ function Experience(){
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laboriosam ab voluptatem, totam reiciendis dolorem quaerat necessitatibus cupiditate ducimus magnam minus provident quam praesentium repellendus aspernatur laudantium facilis maxime excepturi.
             </p>
             <h1 className="display-5">Jobs</h1>
-            <div className="row">
+            <div className="row m-0">
                 <Job/>
                 <Job/>
                 <Job/>
                 <Job/>
             </div>
             <h1 className="display-5">Education</h1>
-            <div className="row">
+            <div className="row m-0">
                 <Education/>
                 <Education/>
                 <Education/>

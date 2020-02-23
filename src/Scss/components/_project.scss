@@ -1,0 +1,17 @@
+.project{
+    @extend .neomorph;
+    @extend .round;
+    img{
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+    }
+    button{
+        @extend .neomorph;
+        @extend .round;
+        position: absolute;
+        top: 2em;
+        right: 2em;
+        border: none;
+    }
+}
