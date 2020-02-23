@@ -1,4 +1,16 @@
-.skill{
-    @extend .neomorph;
-    @extend .rounded;
+.skill {
+  @extend .neomorph;
+  border-radius: 50%;
 }
+.CircularProgressbar-path {
+  stroke: $color_primary!important;
+}
+.CircularProgressbar-trail {
+  stroke: transparent!important;
+}
+.CircularProgressbar-text {
+  fill: $color_primary!important;
+}
+// .CircularProgressbar-background {
+//   fill: green!important;
+// }

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Job from '../../Components/Organism/Job'
+import Education from '../../Components/Organism/Education'
 
 function Experience(){
     return(
@@ -13,8 +14,16 @@ function Experience(){
             <div className="row">
                 <Job/>
                 <Job/>
+                <Job/>
+                <Job/>
             </div>
             <h1 className="display-5">Education</h1>
+            <div className="row">
+                <Education/>
+                <Education/>
+                <Education/>
+                <Education/>
+            </div>
         </div>
     )
 }

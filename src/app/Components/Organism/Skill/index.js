@@ -6,7 +6,7 @@ function Skill() {
   const percentage = 66;
   const skill = "Skill";
   return (
-    <div className="col-6 col-md-3 col-lg-2 p-3 skill m-3">
+    <div className="col-5 col-md-3 col-lg-2 p-3 skill my-2 mx-2">
       <CircularProgressbar
         value={percentage}
         text={skill}

@@ -38,7 +38,7 @@ function Main() {
             Contact
           </NavLink>
         </Nav>
-        <div className="col p-0">
+        <div className="col p-0 pr-md-5 mr-md-5">
         <div className="container">
             <Switch>
               <Route exact path="/">

@@ -10,7 +10,7 @@ function About(){
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laboriosam ab voluptatem, totam reiciendis dolorem quaerat necessitatibus cupiditate ducimus magnam minus provident quam praesentium repellendus aspernatur laudantium facilis maxime excepturi.
             </p>
             <h1 className="display-5">Skills</h1>
-            <div className="row">
+            <div className="row pl-3 pl-md-0">
                 <Skill/>
                 <Skill/>
                 <Skill/>

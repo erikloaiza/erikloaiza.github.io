@@ -1,4 +1,4 @@
 .job{
     @extend .neomorph;
-    border-radius: .75em;
+    @extend .round;
 }
