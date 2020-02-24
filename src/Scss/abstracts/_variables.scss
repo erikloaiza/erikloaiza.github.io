@@ -12,3 +12,5 @@ $font_display: 'Righteous';
 //neomorph
 $shadow_dark: adjust-color($color: $color_white, $lightness: -25%, $alpha: 0.6);
 $shadow_ligh: adjust-color($color: $color_white, $lightness: 25%, $alpha: 0.6);
+
+$transition_delay: .25s;

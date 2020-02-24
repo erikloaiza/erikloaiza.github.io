@@ -2,16 +2,30 @@
     @extend .neomorph;
     @extend .round;
     img{
-        width: 10em;
-        height: 10em;
+        width: 4em;
+        height: 4em;
         border-radius: 50%;
+        display: none;
     }
     button{
-        @extend .neomorph;
-        @extend .round;
-        position: absolute;
-        top: 2em;
-        right: 2em;
+        position: relative;
+        @extend .neomorph--lighter;
+        @extend .rounded;
         border: none;
+        background-color: inherit;
     }
 }
+@include media-breakpoint-up(md) { 
+    .project{
+        img{
+            width: 10em;
+            height: 10em;
+            display: block;
+        }
+        button{
+            position: absolute;
+            top:1.5em;
+            right: 1.5em;
+        }
+    }
+ }

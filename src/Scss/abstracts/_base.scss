@@ -1,5 +1,21 @@
 .neomorph{
-    box-shadow: 9px 9px 16px $shadow_dark,-9px -9px 16px $shadow_ligh
+    box-shadow: 9px 9px 16px $shadow_dark,-9px -9px 16px $shadow_ligh;
+    &--light{
+        box-shadow: 4px 4px 8px $shadow_dark,-4px -4px 8px $shadow_ligh;  
+    }
+    &--lighter{
+        box-shadow: 2px 2px 4px $shadow_dark,-2px -2px 4px $shadow_ligh;  
+    }
+
+    &--inverse{
+        box-shadow: inset 9px 9px 16px $shadow_dark, inset -9px -9px 16px $shadow_ligh;
+        &--light{
+            box-shadow: inset 4px 4px 8px $shadow_dark, inset -4px -4px 8px $shadow_ligh;  
+        }
+        &--lighter{
+            box-shadow:  inset 2px 2px 4px $shadow_dark, inset -2px -2px 4px $shadow_ligh;  
+        }
+    }
 }
 .round{
     border-radius: 1.25em;

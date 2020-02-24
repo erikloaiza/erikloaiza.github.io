@@ -1,8 +1,12 @@
 @import 'abstracts/variables';
 @import 'abstracts/base';
+
+@import 'vendor/boostrap';
+
 @import 'components/menu';
 @import 'components/skill';
 @import 'components/job';
 @import 'components/education';
 @import 'components/project';
-@import 'vendor/boostrap';
+@import 'components/check';
+@import 'components/form';
