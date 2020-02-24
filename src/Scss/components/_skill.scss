@@ -1,6 +1,10 @@
 .skill {
   @extend .neomorph;
   border-radius: 50%;
+  &--detail{
+    @extend .neomorph--light;
+    border-radius: inherit;
+  }
 }
 .CircularProgressbar-path {
   stroke: $color_primary!important;

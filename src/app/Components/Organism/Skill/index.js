@@ -12,7 +12,7 @@ function Skill() {
         text={skill}
         circleRatio="0.75"
         strokeWidth="4"
-        className="skill"
+        className="skill--detail"
         styles={buildStyles({
           rotation: 1 / 2 + 1 / 8
         })}

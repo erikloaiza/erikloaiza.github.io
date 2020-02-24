@@ -1,0 +1,14 @@
+form{
+    @extend .neomorph--light;
+    @extend .round;
+    input, textarea{
+        @extend .neomorph--lighter;
+        @extend .rounded;
+        background-color: inherit;
+        border: none;
+    }
+    input[type=submit]{
+        width: max-content;
+    }
+
+}
