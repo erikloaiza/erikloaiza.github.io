@@ -13,33 +13,36 @@ import About from "../About";
 import Experience from "../Experience";
 import Portfolio from "../Portfolio";
 import Contact from "../Contact";
+import SideNav from "../../Components/Organism/SideNav";
 
 function Main() {
   return (
     <div className="row py-5 px-3">
       <Router>
-        <Nav
-          defaultActiveKey="/home"
-          className="flex-column align-items-start px-4 d-none d-md-flex col-2"
-        >
-          <NavLink className="nav-link" to="/home">
-            Home
-          </NavLink>
-          <NavLink className="nav-link" to="/about">
-            About
-          </NavLink>
-          <NavLink className="nav-link" to="/experience">
-            Experience
-          </NavLink>
-          <NavLink className="nav-link" to="/portfolio">
-            Portfolio
-          </NavLink>
-          <NavLink className="nav-link" to="/Contact">
-            Contact
-          </NavLink>
-        </Nav>
+        <SideNav>
+          <Nav
+            defaultActiveKey="/home"
+            className="flex-column align-items-start px-4 col-2"
+          >
+            <NavLink className="nav-link" to="/home">
+              Home
+            </NavLink>
+            <NavLink className="nav-link" to="/about">
+              About
+            </NavLink>
+            <NavLink className="nav-link" to="/experience">
+              Experience
+            </NavLink>
+            <NavLink className="nav-link" to="/portfolio">
+              Portfolio
+            </NavLink>
+            <NavLink className="nav-link" to="/Contact">
+              Contact
+            </NavLink>
+          </Nav>
+        </SideNav>
         <div className="col p-0 pr-md-5 mr-md-5">
-        <div className="container">
+          <div className="container">
             <Switch>
               <Route exact path="/">
                 <Redirect to="/home" />
@@ -60,9 +63,8 @@ function Main() {
                 <Contact />
               </Route>
             </Switch>
+          </div>
         </div>
-        </div>
-
       </Router>
     </div>
   );

@@ -10,3 +10,51 @@
         }
     }
 }
+.sidenav{
+    z-index: $zindex-modal;
+    .content{
+        transition: $transition_delay;
+        position: fixed;
+        background-color: $color_white;
+        height: 110vh;
+        left: -12em;
+        min-width: 12em;
+        top:0;
+        &.show{
+            left: 0;
+        }
+    }
+    &--shadow{
+        z-index: -1;
+        position: absolute;
+        transition: $transition_delay;
+        background-color: $color_black;
+        top: 0;
+        left: 0;
+        width: 110%;
+        height: 110%;
+        opacity: 0;
+        &.show{
+            opacity: 0.75;
+        }
+    }
+    button{
+        position: absolute;
+        top: 0.25em;
+        left: 0.25em;
+        background:none;
+        border: none;
+        font-size: 1.5rem;
+    }
+}
+
+@include media-breakpoint-up(md){
+    .sidenav{
+        .content{
+            position: initial;
+        }
+        &--shadow{
+            display: none;
+        }
+    }
+}
