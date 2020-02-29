@@ -7,7 +7,7 @@ function Contact(){
             <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <form className="d-flex flex-column p-4" action="mailto:erik.loaiza.p@gmail.com" method="post" enctype="text/plain">
+          <form className="d-flex flex-column p-4" action="mailto:erik.loaiza.p@gmail.com" method="post" encType="text/plain">
               <label className="mt-2">subject</label>
               <input/>
               <label className="mt-2">email or contact</label>

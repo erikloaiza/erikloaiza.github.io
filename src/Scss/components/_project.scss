@@ -2,6 +2,7 @@
     @extend .neomorph;
     @extend .round;
     img{
+        @extend .neomorph--light;
         width: 4em;
         height: 4em;
         border-radius: 50%;
