@@ -13,6 +13,7 @@
 .sidenav{
     z-index: $zindex-modal;
     .content{
+        font-family: $font_display;
         transition: $transition_delay;
         position: fixed;
         background-color: $color_white;

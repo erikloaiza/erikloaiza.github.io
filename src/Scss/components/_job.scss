@@ -1,4 +1,7 @@
 .job{
     @extend .neomorph--light;
     @extend .round;
+    h6{
+        color: $color_primary_alt;
+    }
 }

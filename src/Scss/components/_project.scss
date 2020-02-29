@@ -15,6 +15,9 @@
         border: none;
         background-color: inherit;
     }
+    span{
+        color:$color_primary_alt;
+    }
 }
 @include media-breakpoint-up(md) { 
     .project{
