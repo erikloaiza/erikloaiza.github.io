@@ -1,13 +1,14 @@
 import React from 'react';
+import { FaGraduationCap } from "react-icons/fa";
 
-function Education() {
+function Education(props) {
     return (
         <div className="col-12 my-2">
             <div className="row education">
-                <i className="icon">A</i>
+                <i className="icon"><FaGraduationCap/></i>
                 <div className="col mx-2 d-flex justify-content-between align-items-center info px-4">
-                    <b className="m-0">Lorem Ipsum</b>
-                    <span>2000-2000</span>
+                    <b className="m-0">{props.desc}</b>
+                    <span>{props.since} - {props.to}</span>
                 </div>
             </div>
         </div>

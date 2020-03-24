@@ -5,7 +5,7 @@ function Contact(){
         <div>
             <h1 className="display-3">Contact</h1>
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Send me a message, i'll be glad to answer.
           </p>
           <form className="d-flex flex-column p-4" action="mailto:erik.loaiza.p@gmail.com" method="post" encType="text/plain">
               <label className="mt-2">subject</label>

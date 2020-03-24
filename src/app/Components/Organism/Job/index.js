@@ -1,14 +1,17 @@
 import React from "react";
 import "react-circular-progressbar/dist/styles.css";
 
-function Job() {
+function Job(props) {
   return (
     <div className="col-md-6">
       <div className="job my-2 px-4 pb-2 pt-3">
-          <h3>Job Title</h3>
-          <h6>Jan 2019 - Jan 2020</h6>
+          <h3>{props.title}</h3>
+          <div className="d-flex mb-2 flex-wrap">
+            <h6>{props.since} - {props.to}</h6>
+            <span className="ml-auto">{props.company}</span>
+          </div>
           <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              {props.desc}
           </p>
       </div>
     </div>

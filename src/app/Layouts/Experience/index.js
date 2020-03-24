@@ -3,26 +3,28 @@ import React from 'react';
 import Job from '../../Components/Organism/Job'
 import Education from '../../Components/Organism/Education'
 
+import ExperienceData from '../../../data/experience'
+
 function Experience(){
     return(
         <div>
             <h1 className="display-3">Experience</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laboriosam ab voluptatem, totam reiciendis dolorem quaerat necessitatibus cupiditate ducimus magnam minus provident quam praesentium repellendus aspernatur laudantium facilis maxime excepturi.
-            </p>
+            <p>{ExperienceData.desc}</p>
             <h1 className="display-5">Jobs</h1>
             <div className="row justify-content-between">
-                <Job/>
-                <Job/>
-                <Job/>
-                <Job/>
+                {
+                    ExperienceData.jobs.map(job=>{
+                        return <Job title={job.title} company={job.company} since={job.since} to={job.to} desc={job.desc}/>
+                    })
+                }
             </div>
-            <h1 className="display-5">Education</h1>
+            <h1 className="display-5 mt-5">Education</h1>
             <div className="row m-0">
-                <Education/>
-                <Education/>
-                <Education/>
-                <Education/>
+                {
+                    ExperienceData.education.map(ed=>{
+                        return <Education type={ed.type} since={ed.since} to={ed.to} desc={ed.desc}/>
+                    })
+                }
             </div>
         </div>
     )

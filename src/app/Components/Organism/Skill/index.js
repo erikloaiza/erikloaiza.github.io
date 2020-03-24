@@ -5,9 +5,9 @@ import "react-circular-progressbar/dist/styles.css";
 
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 
-function Skill() {
-  const percentage = 66;
-  const skill = "Skill";
+function Skill(props) {
+  const percentage = props.percentage;
+  const skill = props.text;
   return (
     <div className="col-5 col-md-3 col-lg-2 p-3 skill my-2 mx-2">
       <VisibilitySensor>
